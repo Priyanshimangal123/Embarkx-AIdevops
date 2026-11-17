@@ -18,7 +18,7 @@ jobs:
                 java-version: '25'
 
             - name: Build and Test (Maven)
-              working-directory: /docker/app1-hello/springboot/hello-spring
+              working-directory: docker/app1-hello/springboot/hello-spring
               run: mvn -B clean verify
             
             - name: Upload test reports
@@ -30,5 +30,5 @@ jobs:
 
                 # A file, directory or wildcard pattern that describes what to upload
                 # Required.
-                path: /docker/app1-hello/springboot/hello-spring/target/surefire-reports
+                path: docker/app1-hello/springboot/hello-spring/target/surefire-reports
     
